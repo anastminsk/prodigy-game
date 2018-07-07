@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Escritura Hebrew';
+  src: url(../../assets/fonts/Escritura-Hebrew.otf) format('opentype');
+}
+
+body {
+  font-family: "Escritura Hebrew", Georgia, serif;
+  color: black;
+  background-color: #06f;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+section.loading-screen {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.loading-screen header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.game-title h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #ff8533;
+}
+
+.hero-logo img {
+  width: 236px;
+  height: 300px;
+}
+
+.enemy-logo img {
+  width: 207px;
+  height: 300px;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+.header-logo img {
+  width: 226px;
+  height: 75px;
+}
+
+.description-section h2, 
+.score-section h2 {
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.description-section p {
+  line-height: 1.5;
+}
+
+.menu-wrapper {
+  margin-top: 30px;
+}
+
+section.menu-container {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.menu-item {
+  padding-bottom: 20px;
+  cursor: pointer;
+  background-color: #ff6;
+  color: #06f;
+}
+
+.menu-item:hover {
+  color: #00004d;
+}
+
+.score-section {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+.score-container h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

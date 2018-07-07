@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Escritura Hebrew';
+  src: url(../../assets/fonts/Escritura-Hebrew.otf) format('opentype');
+}
+
+section.hero-config-page {
+  font-family: "Escritura Hebrew", Georgia, serif;
+  background-color: #06f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  padding: 0 7%;
+}
+
+.hero-config-page h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.hero-config-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+section.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#player-name-input {
+  margin: 15px 0;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.hero-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-options h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-figure-container {
+  width: 300px;
+  height: 300px;
+  margin: 25px auto;
+}
+
+.submit {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.submit-button {
+  padding: 7px 20px 10px;
+  color: #06f;
+  background-color: #ff6;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  color: #00004d;
+}

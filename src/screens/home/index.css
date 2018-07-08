@@ -1,4 +1,4 @@
-section.loading-screen {
+section.home-screen {
   font-family: "Escritura Hebrew", Georgia, serif;
   background-color: #06f;
   color: #fff;
@@ -9,7 +9,7 @@ section.loading-screen {
   padding: 0 7%;
 }
 
-.loading-screen header {
+.home-screen header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,26 +55,28 @@ section.loading-screen {
 }
 
 .description-section p {
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .menu-wrapper {
   margin-top: 30px;
 }
 
-section.menu-container {
+section.button-container {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-.menu-item {
+.button-container button {
   padding-bottom: 20px;
+  margin: 0 10px;
   cursor: pointer;
   background-color: #ff6;
   color: #06f;
 }
 
-.menu-item:hover {
+.button-container button:hover {
   color: #00004d;
 }
 

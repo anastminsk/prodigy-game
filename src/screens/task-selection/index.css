@@ -1,0 +1,26 @@
+.task-type-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 600px;
+  margin-top: 30px;
+}
+
+.task-type-item {
+  border: 2px solid #033;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 15px;
+}
+
+.task-type-item:hover {
+  transform: scale(1.1);
+  border: 2px solid #ff8533;
+}

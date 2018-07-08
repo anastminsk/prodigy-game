@@ -100,7 +100,7 @@ section.battle-screen section {
   cursor: pointer;
 }
 
-.player-container {
+.hero-container {
   position: absolute;
   bottom: 100px;
   left: 100px;
@@ -108,7 +108,7 @@ section.battle-screen section {
   height: 512px;
 }
 
-.opponent-container {
+.enemy-container {
   position: absolute;
   bottom: 100px;
   right: 100px;

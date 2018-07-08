@@ -1,0 +1,35 @@
+.attack-container {
+  display: flex;
+  justify-content: space-around;
+  min-width: 600px;
+  margin-top: 50px;
+}
+
+.attack-item {
+  border: 2px solid #033;
+  width: 100px;
+  height: 100px;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.attack-item:hover {
+  transform: scale(1.1);
+  border: 2px solid #ff8533;
+}
+
+.attack-1 {
+  background: url('img/explosion-attack.png') 50% 100% no-repeat;
+}
+
+.attack-2 {
+  background: url('img/energy-ball-attack.png') 50% 100% no-repeat;
+}
+
+.attack-3 {
+  background: url('img/acid-gun-attack.png') 50% 100% no-repeat;
+}

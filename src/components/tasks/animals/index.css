@@ -1,0 +1,54 @@
+.animal-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.animal-wrapper > div {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.badger {
+  background-image: url('img/badger.png');
+}
+
+.bear {
+  background-image: url('img/bear.png');
+}
+
+.beaver {
+  background-image: url('img/beaver.png');
+}
+
+.fox {
+  background-image: url('img/fox.png');
+}
+
+.hedgehog {
+  background-image: url('img/hedgehog.png');
+}
+
+.moose {
+  background-image: url('img/moose.png');
+}
+
+.mouse {
+  background-image: url('img/mouse.png');
+}
+
+.rabbit {
+  background-image: url('img/rabbit.png');
+}
+
+.squirrel {
+  background-image: url('img/squirrel.png');
+}
+
+.wolf {
+  background-image: url('img/wolf.png');
+}

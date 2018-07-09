@@ -1,0 +1,10 @@
+.math-expression {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.math-expression span {
+	padding: 5px;
+}

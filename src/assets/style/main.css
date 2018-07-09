@@ -1,0 +1,10 @@
+body {
+  font-family: "Escritura Hebrew", Georgia, serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}

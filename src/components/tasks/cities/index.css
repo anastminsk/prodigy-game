@@ -1,0 +1,58 @@
+.city-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.city-wrapper > div {
+  width: 400px;
+  height: 300px;
+  background-position: center;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.berlin {
+  background-image: url('img/berlin.jpg');
+}
+
+.london {
+  background-image: url('img/london.jpg');
+}
+
+.minsk {
+  background-image: url('img/minsk.jpg');
+}
+
+.moscow {
+  background-image: url('img/moscow.jpg');
+}
+
+.new-york {
+  background-image: url('img/new-york.jpg');
+}
+
+.paris {
+  background-image: url('img/paris.jpg');
+}
+
+.praha {
+  background-image: url('img/praha.jpg');
+}
+
+.rome {
+  background-image: url('img/rome.jpg');
+}
+
+.sankt-petersburg {
+  background-image: url('img/sankt-petersburg.jpg');
+}
+
+.warsaw {
+  background-image: url('img/warsaw.jpg');
+}
+
+.wien {
+  background-image: url('img/wien.jpg');
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nastassia Tanyhina">
+    <title>Prodigy Fighting Game</title>
+    <link rel="icon" type="image/png" href="../../assets/img/gem-icon.png">
+    <link rel="stylesheet" href="../../assets/style/normalize.css">
+    <link rel="stylesheet" href="../../assets/style/font.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <section class="task-screen hidden">
+      <div class="task-wrapper hidden" id="mathematics-task">
+        <p>Calculate this expression</p>
+        <div class="math-expression" id="math-expression">
+          <span id="first-number"></span>
+          <span id="operation"></span>
+          <span id="second-number"></span>
+          <span>=</span>
+          <input type="text" name="math-result" id="math-result" autofocus>
+        </div>
+      </div>
+      <div class="task-wrapper hidden" id="translation-task">
+        <p>Translate the word below into Russian</p>
+        <p class="word-for-translation" id="word-for-translation"></p>
+        <input type="text" name="translation-input" id="translation-input" autofocus>
+      </div>
+      <div class="task-wrapper hidden" id="listenning-task">
+        <p>Click the button below and enter what you heard</p>
+        <div class="listening-button"><img src="img/listen-button.png" alt="Listen" width="80" height="80"></div>
+        <input type="text" name="listenning-answer" id="listenning-answer">
+      </div>
+      <div class="task-wrapper hidden" id="cities-task">
+        <p>What city is this?</p>
+        <div class="city-wrapper" id="city-wrapper"></div>
+        <input type="text" name="city-answer" id="city-answer" autofocus>
+      </div>
+      <div class="task-wrapper hidden" id="animals-task">
+        <p>What animal is this?</p>
+        <div class="animal-wrapper" id="animal-wrapper"></div>
+        <input type="text" name="animal-answer" id="animal-answer" autofocus>
+      </div>
+      <button class="check-answer-button" id="check-answer-button">Check</button>
+      <div class="correct-answer hidden" id="correct-answer">Correct Answer!</div>
+      <div class="wrong-answer hidden" id="wrong-answer">Wrong Answer!</div>
+      <audio id="correct-answer-sound" src="../../assets/sounds/succes.wav"></audio>
+      <audio id="wrong-answer-sound" src="../../assets/sounds/failure.wav"></audio>
+    </section>
+  </body>
+</html>

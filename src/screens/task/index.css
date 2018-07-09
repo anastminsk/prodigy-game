@@ -1,0 +1,69 @@
+.task-screen {
+  font-family: "Escritura Hebrew", Georgia, serif;
+  position: absolute;
+  background-color: #099;
+  color: #033;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.correct-answer {
+  position: absolute;
+  top: 0;
+  background-color: rgba(77, 255, 77, 0.2);
+  font-size: 3rem;
+  color: #ffbf80;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.wrong-answer {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 77, 77, 0.2);
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  color: #ffbf80;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.check-answer-button {
+  width: 100px;
+  height: 50px;
+  background-color: #ff8533;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.task-screen input {
+  border: 2px solid #ff8533;
+  padding: 5px;
+  text-align: center;
+}
+
+.task-screen p {
+  margin: 20px auto;
+}
+
+.task-wrapper {
+  width: 100%;
+  text-align: center;
+}

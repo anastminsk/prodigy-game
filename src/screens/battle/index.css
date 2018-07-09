@@ -1,7 +1,6 @@
 section.battle-screen {
   position: relative;
   min-height: 100vh;
-  font-family: "Escritura Hebrew", Georgia, serif;
   color: #fff;
   background: #06f url('img/bg.png') 50% 100% no-repeat;
   background-size: 100% 100%;

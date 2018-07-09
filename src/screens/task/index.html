@@ -8,7 +8,13 @@
     <link rel="icon" type="image/png" href="../../assets/img/gem-icon.png">
     <link rel="stylesheet" href="../../assets/style/normalize.css">
     <link rel="stylesheet" href="../../assets/style/font.css">
+    <link rel="stylesheet" href="../../assets/style/main.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../components/tasks/simpleMath/index.css">
+    <link rel="stylesheet" href="../../components/tasks/engToRu/index.css">
+    <link rel="stylesheet" href="../../components/tasks/listening/index.css">
+    <link rel="stylesheet" href="../../components/tasks/cities/index.css">
+    <link rel="stylesheet" href="../../components/tasks/animals/index.css">
   </head>
   <body>
     <section class="task-screen hidden">
@@ -19,13 +25,13 @@
           <span id="operation"></span>
           <span id="second-number"></span>
           <span>=</span>
-          <input type="text" name="math-result" id="math-result" autofocus>
+          <input type="text" name="math-result" id="math-result">
         </div>
       </div>
       <div class="task-wrapper hidden" id="translation-task">
         <p>Translate the word below into Russian</p>
         <p class="word-for-translation" id="word-for-translation"></p>
-        <input type="text" name="translation-input" id="translation-input" autofocus>
+        <input type="text" name="translation-input" id="translation-input">
       </div>
       <div class="task-wrapper hidden" id="listenning-task">
         <p>Click the button below and enter what you heard</p>
@@ -35,12 +41,12 @@
       <div class="task-wrapper hidden" id="cities-task">
         <p>What city is this?</p>
         <div class="city-wrapper" id="city-wrapper"></div>
-        <input type="text" name="city-answer" id="city-answer" autofocus>
+        <input type="text" name="city-answer" id="city-answer">
       </div>
       <div class="task-wrapper hidden" id="animals-task">
         <p>What animal is this?</p>
         <div class="animal-wrapper" id="animal-wrapper"></div>
-        <input type="text" name="animal-answer" id="animal-answer" autofocus>
+        <input type="text" name="animal-answer" id="animal-answer">
       </div>
       <button class="check-answer-button" id="check-answer-button">Check</button>
       <div class="correct-answer hidden" id="correct-answer">Correct Answer!</div>

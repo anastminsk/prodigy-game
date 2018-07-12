@@ -5,7 +5,7 @@ class SimpleMathTask extends Task {
     super();
     this.result = document.getElementById('math-result');
     this.operations = ['+', '-', '*', '/'];
-    this.taskWrapper = document.getElementById("mathematics-task");
+    this.taskWrapper = document.getElementById('mathematics-task');
     this.firstNumber = document.getElementById('first-number');
     this.operator = document.getElementById('operation');
     this.secondNumber = document.getElementById('second-number');

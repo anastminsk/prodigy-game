@@ -7,10 +7,11 @@
 
 .attack-item {
   border: 2px solid #033;
-  width: 100px;
+  width: 200px;
   height: 100px;
   text-align: center;
   padding: 10px;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -24,9 +25,5 @@
 }
 
 .attack-2 {
-  background: url('img/energy-ball-attack.png') 50% 100% no-repeat;
-}
-
-.attack-3 {
-  background: url('img/acid-gun-attack.png') 50% 100% no-repeat;
+  background: url('img/acid-attack.png') 50% 100% no-repeat;
 }

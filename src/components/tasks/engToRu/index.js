@@ -19,8 +19,8 @@ class EngToRuTask extends Task {
   }
 
   checkResult() {
-    this.answer = this.answer.value.toLowerCase();
-    if (this.translations.indexOf(this.answer) !== -1) {
+    let answer = this.answer.value.toLowerCase();
+    if (this.translations.indexOf(answer !== -1)) {
       return true;
     } 
 

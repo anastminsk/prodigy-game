@@ -12,6 +12,7 @@ class ListeningTask extends Task {
 
   init() {
     super.init();
+    this.taskWrapper.classList.remove('hidden');
     this.answer.value = '';
     let index = Math.floor(Math.random() * this.vocabulary.length);
     this.word = this.vocabulary[index].word;

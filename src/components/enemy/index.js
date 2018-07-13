@@ -13,7 +13,7 @@ class Enemy extends Hero {
     this.name = `${this.namesList.adjective[adjectiveIndex]} ${this.namesList.species[speciesIndex]} ${this.namesList.name[nameIndex]}`;
   }
 
-  generateLook() {
+  generateAppearance() {
     this.headNum = Math.floor(Math.random() * 3);
     this.bodyNum = Math.floor(Math.random() * 3);
   }

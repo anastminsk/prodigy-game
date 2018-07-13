@@ -2,7 +2,7 @@ class Bar {
   constructor(className) {
     this.canvas = document.createElement('canvas');
     this.ctx = this.canvas.getContext('2d');
-    this.canvas.classList.add('bar');
+    this.canvas.classList.add('bar', className);
     this.container = document.getElementById('health-bar');
     this.container.appendChild(this.canvas);
   }

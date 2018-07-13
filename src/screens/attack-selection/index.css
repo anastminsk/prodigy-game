@@ -20,10 +20,10 @@
   border: 2px solid #ff8533;
 }
 
-.attack-1 {
+.attack-gun {
   background: url('img/explosion-attack.png') 50% 100% no-repeat;
 }
 
-.attack-2 {
+.attack-sword {
   background: url('img/acid-attack.png') 50% 100% no-repeat;
 }

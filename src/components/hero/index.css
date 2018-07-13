@@ -1,3 +1,12 @@
+.head {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 0;
+  left: 0;
+  width: 265px;
+  height: 270px;
+}
 
 .head-0 {
   background-image: url("img/head/0.png");
@@ -11,6 +20,16 @@
   background-image: url("img/head/2.png");
 }
 
+.body {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 0;
+  left: 0;
+  width: 165px;
+  height: 200px;
+}
+
 .body-0 {
   background-image: url("img/body/0.png");
 }
@@ -21,4 +40,206 @@
 
 .body-2 {
   background-image: url("img/body/2.png");
+}
+
+.person {
+  width: 532px;
+  height: 532px;
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+
+.bg-gun.head-0.body-0 {
+  background-image: url("img/struggle/gun/0-0.png");
+}
+
+.bg-gun.head-0.body-1 {
+  background-image: url("img/struggle/gun/0-1.png");
+}
+
+.bg-gun.head-0.body-2 {
+  background-image: url("img/struggle/gun/0-2.png");
+}
+
+.bg-gun.head-1.body-0 {
+  background-image: url("img/struggle/gun/1-0.png");
+}
+
+.bg-gun.head-1.body-1 {
+  background-image: url("img/struggle/gun/1-1.png");
+}
+
+.bg-gun.head-1.body-2 {
+  background-image: url("img/struggle/gun/1-2.png");
+}
+
+.bg-gun.head-2.body-0 {
+  background-image: url("img/struggle/gun/2-0.png");
+}
+
+.bg-gun.head-2.body-1 {
+  background-image: url("img/struggle/gun/2-1.png");
+}
+
+.bg-gun.head-2.body-2 {
+  background-image: url("img/struggle/gun/2-2.png");
+}
+
+/****************************************************************/
+
+.bg-sword.head-0.body-0 {
+  background-image: url("img/struggle/sword/0-0.png");
+}
+
+.bg-sword.head-0.body-1 {
+  background-image: url("img/struggle/sword/0-1.png");
+}
+
+.bg-sword.head-0.body-2 {
+  background-image: url("img/struggle/sword/0-2.png");
+}
+
+.bg-sword.head-1.body-0 {
+  background-image: url("img/struggle/sword/1-0.png");
+}
+
+.bg-sword.head-1.body-1 {
+  background-image: url("img/struggle/sword/1-1.png");
+}
+
+.bg-sword.head-1.body-2 {
+  background-image: url("img/struggle/sword/1-2.png");
+}
+
+.bg-sword.head-2.body-0 {
+  background-image: url("img/struggle/sword/2-0.png");
+}
+
+.bg-sword.head-2.body-1 {
+  background-image: url("img/struggle/gun/2-1.png");
+}
+
+.bg-sword.head-2.body-2 {
+  background-image: url("img/struggle/sword/2-2.png");
+}
+
+/****************************************************************/
+
+.bg-die.head-0.body-0 {
+  background-image: url("img/struggle/die/0-0.png");
+}
+
+.bg-die.head-0.body-1 {
+  background-image: url("img/struggle/die/0-1.png");
+}
+
+.bg-die.head-0.body-2 {
+  background-image: url("img/struggle/die/0-2.png");
+}
+
+.bg-die.head-1.body-0 {
+  background-image: url("img/struggle/die/1-0.png");
+}
+
+.bg-die.head-1.body-1 {
+  background-image: url("img/struggle/die/1-1.png");
+}
+
+.bg-die.head-1.body-2 {
+  background-image: url("img/struggle/die/1-2.png");
+}
+
+.bg-die.head-2.body-0 {
+  background-image: url("img/struggle/die/2-0.png");
+}
+
+.bg-die.head-2.body-1 {
+  background-image: url("img/struggle/die/2-1.png");
+}
+
+.bg-die.head-2.body-2 {
+  background-image: url("img/struggle/die/2-2.png");
+}
+
+
+@keyframes person-move-1 {
+  0%
+  {
+      background-position: -10px -10px;    
+  }
+  20%
+  {
+      background-position: -542px -10px;
+  }
+  40%
+  {
+      background-position: -1074px -10px;
+  }
+  60%
+  {
+      background-position: -1606px -10px;
+  }
+  80%
+  {
+      background-position: -2138px -10px;
+  }
+  100%
+  {
+      background-position: -2670px -10px;
+  }
+}
+
+@keyframes person-move-2 {
+  0%
+  {
+      background-position: -10px -10px;    
+  }
+  10%
+  {
+      background-position: -542px -10px;
+  }
+  20%
+  {
+      background-position: -1074px -10px;
+  }
+  40%
+  {
+      background-position: -1606px -10px;
+  }
+  50%
+  {
+      background-position: -2138px -10px;
+  }
+  60%
+  {
+      background-position: -2670px -10px;
+  }
+  70%
+  {
+      background-position: -3202px -10px;
+  }
+  80%
+  {
+      background-position: -3734px -10px;
+  }
+  90%
+  {
+      background-position: -4266px -10px;
+  }
+  100%
+  {
+      background-position: -4798px -10px;
+  }
+}
+
+.person-attack-gun {
+  animation: person-move-1 2s steps(1, start);
+}
+
+.person-attack-sword {
+  animation: person-move-2 2s steps(1, start);
+}
+
+.person-die {
+  animation: person-move-2 2s steps(1, start);
 }

@@ -47,13 +47,13 @@ section.home-screen {
   height: 75px;
 }
 
-.description-section h2, 
+.description h2, 
 .score-section h2 {
   text-align: center;
   margin: 0 auto 20px auto;
 }
 
-.description-section p {
+.description p {
   line-height: 1.2;
 }
 
@@ -61,13 +61,13 @@ section.home-screen {
   margin-top: 30px;
 }
 
-section.button-container {
+section.navigation {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.button-container button {
+.navigation button {
   padding-bottom: 20px;
   margin: 0 10px;
   cursor: pointer;
@@ -75,7 +75,7 @@ section.button-container {
   color: #06f;
 }
 
-.button-container button:hover {
+.navigation button:hover {
   color: #00004d;
 }
 

@@ -23,7 +23,7 @@ class Loading {
   }
 
   showScore() {
-    this.score.showScore(this.scoreContainer);
+    this.score.show(this.scoreContainer);
     this.scoreSection.classList.remove('hidden');
     this.navigation.classList.add('hidden');
   }

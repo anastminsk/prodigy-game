@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <section class="battle-screen hidden">
+    <section class="battle-screen hidden" id="battle-screen">
       <div class="battle-field-header">
         <div class="player-name" id="player-name"></div>
         <div class="game-level"><h2>Level</h2><span id="game-level"></span></div>
@@ -24,7 +24,7 @@
         <button class="attack-button">Attack</button>
       </div>
       <div class="game-result-window modal-dialog hidden" id="game-result-window">
-        <div class="win-game-window hidden">
+        <div class="win-game-window hidden" id="win-game-window">
           <h2>You win!</h2>
           <p>Continue to struggle with next enemy?</p>
           <div class="win-game-buttons-block">
@@ -32,7 +32,7 @@
             <button class="button" id="exit-to-menu-button">No</button>
           </div>
         </div>
-        <div class="lose-game-window hidden">
+        <div class="lose-game-window hidden" id="lose-game-window">
           <h2>You lose!</h2>
           <p>You solved <span id="number-of-tasks"></span> tasks and killed <span id="number-of-enemies"></span> enemies</p>
           <button class="exit-button">Exit to menu</button>

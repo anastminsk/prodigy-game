@@ -21,7 +21,11 @@ class Hero {
     if (!this.healthBar) {
       this.healthBar = new Bar(className);
     }
-      
+
+    this.renderHealthBar();
+  }
+
+  renderHealthBar() {
     this.healthBar.render(this.health);
   }
 

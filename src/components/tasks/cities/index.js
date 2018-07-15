@@ -37,4 +37,4 @@ class CitiesTask extends Task {
   }
 }
 
-export default CitiesTask;
+export const citiesTask = new CitiesTask();

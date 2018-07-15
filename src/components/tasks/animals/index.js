@@ -37,4 +37,4 @@ class AnimalsTask extends Task {
   }
 }
 
-export default AnimalsTask;
+export const animalsTask = new AnimalsTask();

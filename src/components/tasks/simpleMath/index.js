@@ -60,4 +60,4 @@ class SimpleMathTask extends Task {
   }
 }
 
-export default SimpleMathTask;
+export const simpleMathTask = new SimpleMathTask();

@@ -28,4 +28,4 @@ class EngToRuTask extends Task {
   }
 }
 
-export default EngToRuTask;
+export const engToRuTask = new EngToRuTask();

@@ -33,4 +33,4 @@ class ListeningTask extends Task {
   }
 }
 
-export default ListeningTask;
+export const listeningTask = new ListeningTask();

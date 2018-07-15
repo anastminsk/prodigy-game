@@ -29,18 +29,18 @@ class Game {
     this.enemy.generateAppearance();
   }
 
-  initGame() {
+  setPersons() {
     this.createEnemy();
     this.battle.render(this.hero, this.enemy);
   }
 
   handleEvents(e) {
     if (e.target.id === 'attack-button') {
-        this.startAttack(e);
+        this.attackSelectionScreen.classList.remove('hidden');
     } else if (e.target.id === 'next-game-button') {
         this.startNextLevel();
     } else if (e.target.id === 'exit-to-menu-button') {
-        this.exitToMenu(e);
+        this.exitToMenu();
     } else if (e.target.classList.contains('attack-item')) {
         this.selectAttackType(e)
     } else if (e.target.classList.contains('task-type-item')) {
@@ -50,10 +50,6 @@ class Game {
     }
   }
 
-  startAttack(e) {
-    this.attackSelectionScreen.classList.remove('hidden');
-  }
-
   startNextLevel() {
     this.level++;
     this.initGame();
@@ -61,7 +57,7 @@ class Game {
     this.battle.winGameWindow.classList.add('hidden');
   }
 
-  exitToMenu(e) {
+  exitToMenu() {
     let resultWindow = `${this.gameStatus}GameWindow`;
     this.battle.gameResultPage.classList.add('hidden');
     this.battle[resultWindow].classList.add('hidden');

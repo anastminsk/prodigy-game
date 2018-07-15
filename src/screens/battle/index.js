@@ -34,9 +34,10 @@ class Battle {
 
   render(hero, enemy) {
     if (this.enemyPerson) {
-        this.battleScreen.removeChild(this.heroPerson);
-        this.battleScreen.removeChild(this.enemyPerson);
-    };
+      this.battleScreen.removeChild(this.heroPerson);
+      this.battleScreen.removeChild(this.enemyPerson);
+    }
+
     this.createHero(hero);
     this.createEnemy(enemy);
   }
@@ -48,10 +49,10 @@ class Battle {
   }
 
   showFinalGameWindow(result, level, tasksAmount) {
-    setTimeout(() => {
+    setTimeout(() => {    
       if (level) {
-          this.setGameResults(level, tasksAmount);
-      };
+        this.setGameResults(level, tasksAmount);
+      }
       this.gameResultWindow.classList.remove('hidden');
     }, 1000);
   }

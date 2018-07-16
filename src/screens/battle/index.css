@@ -7,13 +7,12 @@ section.battle-screen {
   font-size: 1.5rem;
 }
 
-section.battle-screen div, 
+section.battle-screen section, 
 section.battle-screen span,
 section.battle-screen h1, 
 section.battle-screen h2, 
 section.battle-screen p, 
-section.battle-screen img, 
-section.battle-screen section {
+section.battle-screen img {
   margin: 0;
   padding: 0;
 }
@@ -21,33 +20,40 @@ section.battle-screen section {
 .battle-field-header {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
   text-transform: uppercase;
 }
 
 .player-name {
   width: 40%;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .enemy-name {
   width: 40%;
   text-align: right;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .health-bar {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
+  margin-top: 20px;
 }
 
 .hero-health-bar {
   height: 30px;
+  width: 400px;
   border: 2px solid #fff;
+  margin-left: 20px;
 }
 
 .enemy-health-bar {
   height: 30px;
+  width: 400px;
   border: 2px solid #fff;
+  margin-right: 20px;
   transform: scaleX(-1);
 }
 
@@ -101,17 +107,17 @@ section.battle-screen section {
 
 .hero-container {
   position: absolute;
-  bottom: 100px;
-  left: 100px;
-  width: 532px;
-  height: 532px;
+  bottom: 30px;
+  left: 0;
+  width: 300px;
+  height: 450px;
 }
 
 .enemy-container {
   position: absolute;
-  bottom: 100px;
-  right: 100px;
-  width: 532px;
-  height: 532px;
+  bottom: 30px;
+  right: 0;
+  width: 300px;
+  height: 450px;
   transform: scaleX(-1);
 }

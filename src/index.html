@@ -30,7 +30,7 @@
         <section class="score-section hidden" id="score-section">
           <h2>Score results</h2>
           <button class="close-button" id="close-button">X</button>
-          <div class="score-container"></div>
+          <div class="score-container" id="score-container"></div>
         </section>
       </div>
     </section>
@@ -43,24 +43,24 @@
             <input type="text" id="player-name-input" name="player-name-input" placeholder="Your Name" required>
           </div>
           <section class="hero-options">
-            <div class="hero-head-container">
+            <div class="hero-head-container" id="hero-head-container">
               <h3>Select Head</h3>
             </div>
-            <div class="hero-body-container">
+            <div class="hero-body-container" id="hero-body-container">
                 <h3>Select Body</h3>
             </div>
           </section>
         </section>
-        <div class="hero-figure-container"></div>
+        <div class="hero-figure-container" id="hero-figure-container"></div>
       </div>
       <div class="submit">
-        <button class="submit-button">Start</button>
+        <button class="submit-button" id="submit-button">Start</button>
       </div>
     </section>
     <section class="battle-screen hidden" id="battle-screen">
       <div class="battle-field-header">
         <div class="player-name" id="player-name"></div>
-        <div class="game-level"><h2>Level</h2><span id="game-level"></span></div>
+        <div class="game-level"><h2>Level <span id="game-level"></span></h2></div>
         <div class="enemy-name" id="enemy-name"></div>
       </div>
       <div class="health-bar" id="health-bar"></div>

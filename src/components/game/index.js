@@ -21,6 +21,7 @@ class Game {
     this.hero = hero;
     this.hero.createHealthBar('hero-health-bar');
     this.enemy.createHealthBar('enemy-health-bar');
+    this.battle.init();
   }
 
   createEnemy() {

@@ -1,12 +1,9 @@
-.head {
-  position: absolute;
+/*.head {
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  top: 0;
-  left: 0;
+  background-position: 0 0;
   width: 265px;
   height: 270px;
-}
+}*/
 
 .head-0 {
   background-image: url("../../assets/img/hero/head/0.png");
@@ -20,15 +17,13 @@
   background-image: url("../../assets/img/hero/head/2.png");
 }
 
-.body {
-  position: absolute;
+/*.body {
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  top: 0;
-  left: 0;
   width: 165px;
   height: 200px;
-}
+  margin-top: -20px;
+  margin-left: 50px;
+}*/
 
 .body-0 {
   background-image: url("../../assets/img/hero/body/0.png");
@@ -43,11 +38,51 @@
 }
 
 .person {
-  width: 532px;
-  height: 532px;
+  
+  width: 300px;
+  height: 450px;
   background-repeat: no-repeat;
-  background-position: -10px -10px;
+  background-position: -100px -60px;
+  margin-left: 30px;
 }
+
+.person.head-0.body-0 {
+  background-image: url("../../assets/img/hero/struggle/gun/0-0.png");
+}
+
+.person.head-0.body-1 {
+  background-image: url("../../assets/img/hero/struggle/gun/0-1.png");
+}
+
+.person.head-0.body-2 {
+  background-image: url("../../assets/img/hero/struggle/gun/0-2.png");
+}
+
+.person.head-1.body-0 {
+  background-image: url("../../assets/img/hero/struggle/gun/1-0.png");
+}
+
+.person.head-1.body-1 {
+  background-image: url("../../assets/img/hero/struggle/gun/1-1.png");
+}
+
+.person.head-1.body-2 {
+  background-image: url("../../assets/img/hero/struggle/gun/1-2.png");
+}
+
+.person.head-2.body-0 {
+  background-image: url("../../assets/img/hero/struggle/gun/2-0.png");
+}
+
+.person.head-2.body-1 {
+  background-image: url("../../assets/img/hero/struggle/gun/2-1.png");
+}
+
+.person.head-2.body-2 {
+  background-image: url("../../assets/img/hero/struggle/gun/2-2.png");
+}
+
+/****************************************************************/
 
 .bg-gun.head-0.body-0 {
   background-image: url("../../assets/img/hero/struggle/gun/0-0.png");

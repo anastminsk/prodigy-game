@@ -38,7 +38,7 @@ class Configuration {
       body.classList.add('config-item-image', item);
       body.dataset.itemNum = index;
       body.dataset.itemType = 'body';
-      bodyist.appendChild(body);
+      bodyList.appendChild(body);
     });
     this.heroBodyContainer.appendChild(bodyList);
   }
@@ -46,29 +46,32 @@ class Configuration {
   renderHeroFigure() {
     this.heroFigureContainer.innerHTML = '';
     let figure = this.hero.createPerson();
-    figure.classList.add('hero-figure');
+    /*figure.classList.add('hero-figure');*/
     this.heroFigureContainer.appendChild(figure);
   }
 
   changeConfiguration(e) {
     let configType = e.target.dataset.itemType;
+
+    if (e.target.id === 'submit-button') {
+      if (this.nameInput.value) {
+        this.hero.name = this.nameInput.value;
+        this.heroCreationScreen.classList.add('hidden');
+        this.game.init(this.hero);
+        this.game.setPersons();
+        this.nameInput.value = "";
+      } 
+    }
+
     switch (configType) {
       case 'head':  
         this.hero.headNum = e.target.dataset.itemNum;
-        this.renderHeroFigure()
+        this.renderHeroFigure();
         break;
       case 'body': 
         this.hero.bodyNum = e.target.dataset.itemNum;
-        this.renderHeroFigure()
+        this.renderHeroFigure();
         break;
-    }
-
-    if (e.target.id === 'submit-button' && this.nameInput.value) {
-      this.hero.name = this.nameInput.value;
-      this.heroCreationScreen.classList.add('hidden');
-      this.game.init(this.hero);
-      this.game.setPersons();
-      this.nameInput.value = "";
     }
   }
 }

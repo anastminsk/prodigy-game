@@ -11,9 +11,13 @@ class Hero {
 
   createPerson() {
     let person = document.createElement('div');
-    person.classList.add('person');
-    person.classList.add(`head-${this.headNum}`);
-    person.classList.add(`body-${this.bodyNum}`);
+    /*this.head = document.createElement('div');
+    this.body = document.createElement('div');
+    this.head.classList.add('head', `head-${this.headNum}`);
+    this.body.classList.add('body', `body-${this.bodyNum}`);*/
+    person.classList.add('person', `head-${this.headNum}`, `body-${this.bodyNum}`);
+    /*person.appendChild(this.head);
+    person.appendChild(this.body);*/
     return person;
   }
 

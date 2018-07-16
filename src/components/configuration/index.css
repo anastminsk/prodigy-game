@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 30%;
+  width: 400px;
 }
 
 .config-item-image {
@@ -11,6 +11,7 @@
   margin: 10px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: contain;
   border: 2px solid #00004d;
   border-radius: 10px;
   background-color: #fff;
@@ -18,13 +19,9 @@
 }
 
 .config-item-image:hover {
-  background-color: #ff8533;
+  transform: scale(1.1);
 }
 
 .hero-figure {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 532px;
-  height: 532px;
+
 }

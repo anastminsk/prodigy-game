@@ -55,13 +55,13 @@ section.hero-options {
 
 .hero-options h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hero-figure-container {
   width: 300px;
-  height: 300px;
-  margin: 25px auto;
+  height: 450px;
+  margin: 50px 25px 10px 25px;
 }
 
 .submit {

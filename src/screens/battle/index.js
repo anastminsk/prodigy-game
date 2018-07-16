@@ -12,6 +12,10 @@ class Battle {
     this.numberOfEnemies = document.getElementById('number-of-enemies');
   }
 
+  init() {
+    this.battleScreen.className = 'battle-screen';
+  }
+
   createHero(hero) {
     this.hero = hero;
     this.heroPerson = this.hero.createPerson();

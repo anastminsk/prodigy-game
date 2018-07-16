@@ -2,7 +2,7 @@ section.battle-screen {
   position: relative;
   min-height: 100vh;
   color: #fff;
-  background: #06f url('img/bg.png') 50% 100% no-repeat;
+  background: #06f url('../../assets/img/screens/battle/bg.png') 50% 100% no-repeat;
   background-size: 100% 100%;
   font-size: 1.5rem;
 }

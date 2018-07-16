@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nastassia Tanyhina">
+    <title>Prodigy Fighting Game</title>
+    <link rel="icon" type="image/png" href="src/assets/img/gem-icon.png">
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <section class="home-screen" id="home-screen">
+      <header>
+        <div class="hero-logo"><img src="src/assets/img/screens/home/shot.png" alt="Hero"  width="236" height="300"></div>
+        <div class="game-title">
+          <div class="header-logo"><img src="src/assets/img/screens/home/prodigy-logo.png" alt="Header Logo" width="226" height="75"></div>
+          <h1>Fighting Game</h1>
+        </div>
+        <div class="enemy-logo"><img src="src/assets/img/screens/home/hurt.png" alt="Enemy"  width="207" height="300"></div>
+      </header>      
+      <div class="menu-wrapper">
+        <section class="description">
+          <h2>Game description</h2>
+          <p>Prodigy Fighting Game is a simple clone of the famous game in which you must fight against virtual enemy answering different logic questions. You can customise the appearance of your enemy, the attack type and choose questions to answer.</p>
+          <p>Let's start to play and show your brain abilities!</p>
+        </section>
+        <section class="navigation" id="navigation">
+          <button id="start">Start new game</button>
+          <button id="score">Show score</button>
+        </section>
+        <section class="score-section hidden" id="score-section">
+          <h2>Score results</h2>
+          <button class="close-button" id="close-button">X</button>
+          <div class="score-container"></div>
+        </section>
+      </div>
+    </section>
+    <section class="hero-creation-screen hidden" id="hero-creation-screen">
+      <h2>Create hero</h2>
+      <div class="hero-creation-container">
+        <section class="hero-description">
+          <div class="player-info">
+            <label for="player-name-input">Please enter Your Name:</label>
+            <input type="text" id="player-name-input" name="player-name-input" placeholder="Your Name" required>
+          </div>
+          <section class="hero-options">
+            <div class="hero-head-container">
+              <h3>Select Head</h3>
+            </div>
+            <div class="hero-body-container">
+                <h3>Select Body</h3>
+            </div>
+          </section>
+        </section>
+        <div class="hero-figure-container"></div>
+      </div>
+      <div class="submit">
+        <button class="submit-button">Start</button>
+      </div>
+    </section>
+    <section class="battle-screen hidden" id="battle-screen">
+      <div class="battle-field-header">
+        <div class="player-name" id="player-name"></div>
+        <div class="game-level"><h2>Level</h2><span id="game-level"></span></div>
+        <div class="enemy-name" id="enemy-name"></div>
+      </div>
+      <div class="health-bar" id="health-bar"></div>
+      <div class="attack-button-container">
+        <button class="attack-button" id="attack-button">Attack</button>
+      </div>
+      <div class="game-result-window modal-dialog hidden" id="game-result-window">
+        <div class="win-game-window hidden" id="win-game-window">
+          <h2>You win!</h2>
+          <p>Continue to struggle with next enemy?</p>
+          <div class="win-game-buttons-block">
+            <button class="button" id="next-game-button">Yes</button>
+            <button class="button" id="exit-to-menu-button">No</button>
+          </div>
+        </div>
+        <div class="lose-game-window hidden" id="lose-game-window">
+          <h2>You lose!</h2>
+          <p>You solved <span id="number-of-tasks"></span> tasks and killed <span id="number-of-enemies"></span> enemies</p>
+          <button class="exit-button">Exit to menu</button>
+        </div>
+      </div>
+      <audio id="shot-sound" src="src/assets/sound/shot-bullet.mp3"></audio>
+      <audio id="sword-sound" src="src/assets/sound/sword.wav"></audio>
+    </section>
+    <section class="attack-selection-screen modal-wrapper hidden" id="attack-selection-screen">
+      <div class="modal-window" id="attack-selection">
+        <h2>Select Attack Type</h2>
+        <div class="attack-container">
+          <div class="attack-item attack-gun" id="attack-gun">Gun Attack</div>
+          <div class="attack-item attack-sword" id="attack-sword">Sword Attack</div>
+        </div>
+      </div>
+    </section>
+    <section class="task-selection-screen modal-wrapper hidden" id="task-selection-screen">
+      <div class="modal-window" id="task-selection">
+        <h2>Select Task Type</h2>
+        <div class="task-type-container">
+          <div class="task-type-item" id="simpleMathTask">Mathematics</div>
+          <div class="task-type-item" id="engToRuTask">Translation</div>
+          <div class="task-type-item" id="listeningTask">Listening</div>
+          <div class="task-type-item" id="citiesTask">Cities</div>
+          <div class="task-type-item" id="animalsTask">Animals</div>
+        </div>
+      </div>
+    </section>
+    <section class="task-screen hidden" id="task-screen">
+      <div class="task-wrapper hidden" id="mathematics-task">
+        <p>Calculate this expression</p>
+        <div class="math-expression" id="math-expression">
+          <span id="first-number"></span>
+          <span id="operation"></span>
+          <span id="second-number"></span>
+          <span>=</span>
+          <input type="text" name="math-result" id="math-result">
+        </div>
+      </div>
+      <div class="task-wrapper hidden" id="translation-task">
+        <p>Translate the word below into Russian</p>
+        <p class="word-for-translation" id="word-for-translation"></p>
+        <input type="text" name="translation-input" id="translation-input">
+      </div>
+      <div class="task-wrapper hidden" id="listening-task">
+        <p>Click the button below and enter what you heard</p>
+        <div class="listening-button"><img src="src/assets/img/screens/task/listen-button.png" alt="Listen" width="80" height="80"></div>
+        <input type="text" name="listening-answer" id="listening-answer">
+      </div>
+      <div class="task-wrapper hidden" id="cities-task">
+        <p>What city is this?</p>
+        <div class="city-wrapper" id="city-wrapper"></div>
+        <input type="text" name="city-answer" id="city-answer">
+      </div>
+      <div class="task-wrapper hidden" id="animals-task">
+        <p>What animal is this?</p>
+        <div class="animal-wrapper" id="animal-wrapper"></div>
+        <input type="text" name="animal-answer" id="animal-answer">
+      </div>
+      <button class="check-answer-button" id="check-answer-button">Check</button>
+    </section>
+    <div class="correct-answer hidden" id="correct-answer">Correct Answer!</div>
+    <div class="wrong-answer hidden" id="wrong-answer">Wrong Answer!</div>
+    <audio id="correct-answer-sound" src="src/assets/sound/success.wav"></audio>
+    <audio id="wrong-answer-sound" src="src/assets/sound/failure.wav"></audio>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>

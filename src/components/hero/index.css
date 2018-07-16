@@ -9,15 +9,15 @@
 }
 
 .head-0 {
-  background-image: url("img/head/0.png");
+  background-image: url("../../assets/img/hero/head/0.png");
 }
 
 .head-1 {
-  background-image: url("img/head/1.png");
+  background-image: url("../../assets/img/hero/head/1.png");
 }
 
 .head-2 {
-  background-image: url("img/head/2.png");
+  background-image: url("../../assets/img/hero/head/2.png");
 }
 
 .body {
@@ -31,15 +31,15 @@
 }
 
 .body-0 {
-  background-image: url("img/body/0.png");
+  background-image: url("../../assets/img/hero/body/0.png");
 }
 
 .body-1 {
-  background-image: url("img/body/1.png");
+  background-image: url("../../assets/img/hero/body/1.png");
 }
 
 .body-2 {
-  background-image: url("img/body/2.png");
+  background-image: url("../../assets/img/hero/body/2.png");
 }
 
 .person {
@@ -50,115 +50,115 @@
 }
 
 .bg-gun.head-0.body-0 {
-  background-image: url("img/struggle/gun/0-0.png");
+  background-image: url("../../assets/img/hero/struggle/gun/0-0.png");
 }
 
 .bg-gun.head-0.body-1 {
-  background-image: url("img/struggle/gun/0-1.png");
+  background-image: url("../../assets/img/hero/struggle/gun/0-1.png");
 }
 
 .bg-gun.head-0.body-2 {
-  background-image: url("img/struggle/gun/0-2.png");
+  background-image: url("../../assets/img/hero/struggle/gun/0-2.png");
 }
 
 .bg-gun.head-1.body-0 {
-  background-image: url("img/struggle/gun/1-0.png");
+  background-image: url("../../assets/img/hero/struggle/gun/1-0.png");
 }
 
 .bg-gun.head-1.body-1 {
-  background-image: url("img/struggle/gun/1-1.png");
+  background-image: url("../../assets/img/hero/struggle/gun/1-1.png");
 }
 
 .bg-gun.head-1.body-2 {
-  background-image: url("img/struggle/gun/1-2.png");
+  background-image: url("../../assets/img/hero/struggle/gun/1-2.png");
 }
 
 .bg-gun.head-2.body-0 {
-  background-image: url("img/struggle/gun/2-0.png");
+  background-image: url("../../assets/img/hero/struggle/gun/2-0.png");
 }
 
 .bg-gun.head-2.body-1 {
-  background-image: url("img/struggle/gun/2-1.png");
+  background-image: url("../../assets/img/hero/struggle/gun/2-1.png");
 }
 
 .bg-gun.head-2.body-2 {
-  background-image: url("img/struggle/gun/2-2.png");
+  background-image: url("../../assets/img/hero/struggle/gun/2-2.png");
 }
 
 /****************************************************************/
 
 .bg-sword.head-0.body-0 {
-  background-image: url("img/struggle/sword/0-0.png");
+  background-image: url("../../assets/img/hero/struggle/sword/0-0.png");
 }
 
 .bg-sword.head-0.body-1 {
-  background-image: url("img/struggle/sword/0-1.png");
+  background-image: url("../../assets/img/hero/struggle/sword/0-1.png");
 }
 
 .bg-sword.head-0.body-2 {
-  background-image: url("img/struggle/sword/0-2.png");
+  background-image: url("../../assets/img/hero/struggle/sword/0-2.png");
 }
 
 .bg-sword.head-1.body-0 {
-  background-image: url("img/struggle/sword/1-0.png");
+  background-image: url("../../assets/img/hero/struggle/sword/1-0.png");
 }
 
 .bg-sword.head-1.body-1 {
-  background-image: url("img/struggle/sword/1-1.png");
+  background-image: url("../../assets/img/hero/struggle/sword/1-1.png");
 }
 
 .bg-sword.head-1.body-2 {
-  background-image: url("img/struggle/sword/1-2.png");
+  background-image: url("../../assets/img/hero/struggle/sword/1-2.png");
 }
 
 .bg-sword.head-2.body-0 {
-  background-image: url("img/struggle/sword/2-0.png");
+  background-image: url("../../assets/img/hero/struggle/sword/2-0.png");
 }
 
 .bg-sword.head-2.body-1 {
-  background-image: url("img/struggle/gun/2-1.png");
+  background-image: url("../../assets/img/hero/struggle/gun/2-1.png");
 }
 
 .bg-sword.head-2.body-2 {
-  background-image: url("img/struggle/sword/2-2.png");
+  background-image: url("../../assets/img/hero/struggle/sword/2-2.png");
 }
 
 /****************************************************************/
 
 .bg-die.head-0.body-0 {
-  background-image: url("img/struggle/die/0-0.png");
+  background-image: url("../../assets/img/hero/struggle/die/0-0.png");
 }
 
 .bg-die.head-0.body-1 {
-  background-image: url("img/struggle/die/0-1.png");
+  background-image: url("../../assets/img/hero/struggle/die/0-1.png");
 }
 
 .bg-die.head-0.body-2 {
-  background-image: url("img/struggle/die/0-2.png");
+  background-image: url("../../assets/img/hero/struggle/die/0-2.png");
 }
 
 .bg-die.head-1.body-0 {
-  background-image: url("img/struggle/die/1-0.png");
+  background-image: url("../../assets/img/hero/struggle/die/1-0.png");
 }
 
 .bg-die.head-1.body-1 {
-  background-image: url("img/struggle/die/1-1.png");
+  background-image: url("../../assets/img/hero/struggle/die/1-1.png");
 }
 
 .bg-die.head-1.body-2 {
-  background-image: url("img/struggle/die/1-2.png");
+  background-image: url("../../assets/img/hero/struggle/die/1-2.png");
 }
 
 .bg-die.head-2.body-0 {
-  background-image: url("img/struggle/die/2-0.png");
+  background-image: url("../../assets/img/hero/struggle/die/2-0.png");
 }
 
 .bg-die.head-2.body-1 {
-  background-image: url("img/struggle/die/2-1.png");
+  background-image: url("../../assets/img/hero/struggle/die/2-1.png");
 }
 
 .bg-die.head-2.body-2 {
-  background-image: url("img/struggle/die/2-2.png");
+  background-image: url("../../assets/img/hero/struggle/die/2-2.png");
 }
 
 

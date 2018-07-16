@@ -1,6 +1,6 @@
 class Score {
   constructor() {
-    this.score = localStorage.getItem('game-results'); 
+    this.score = localStorage['game-results']; 
   }
 
   createItem(item, list) {
@@ -23,7 +23,7 @@ class Score {
       container.textContent = "Score is empty"
     } else {
       const scoreList = document.createElement('ol');
-      const topScore = JSON.parse(localStorage.getItem('game-results'));
+      const topScore = JSON.parse(localStorage['game-results']);
       topScore.forEach(item => this.createItem(item, scoreList));
       container.appendChild(scoreList);
     }
@@ -31,13 +31,13 @@ class Score {
 
   refresh(player) {
     if (!this.score) {
-      localStorage.setItem('game-results') = JSON.stringify([player]);
+      localStorage['game-results'] = JSON.stringify([player]);
     } else {
-      let score = JSON.parse(localStorage.getItem('game-results'));
+      let score = JSON.parse(localStorage['game-results']);
       score.push(player);
       score.sort((a, b) => b.result - a.result);
       score.length > 5 ? score.pop() : score;
-      localStorage.setItem('game-results') = JSON.stringify(score);
+      localStorage['game-results'] = JSON.stringify(score);
     }
   }
 }

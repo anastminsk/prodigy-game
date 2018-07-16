@@ -1,0 +1,17 @@
+@import "./assets/style/normalize.css";
+@import "./assets/style/font.css";
+@import "./assets/style/main.css";
+@import "./components/configuration/index.css";
+@import "./components/hero/index.css";
+@import "./screens/home/index.css";
+@import "./screens/attack-selection/index.css";
+@import "./screens/hero-creation/index.css";
+@import "./screens/battle/index.css";
+@import "./screens/modal-dialog/index.css";
+@import "./screens/task-selection/index.css";
+@import "./screens/task/index.css";
+@import "./components/tasks/simpleMath/index.css";
+@import "./components/tasks/engToRu/index.css";
+@import "./components/tasks/listening/index.css";
+@import "./components/tasks/cities/index.css";
+@import "./components/tasks/animals/index.css";

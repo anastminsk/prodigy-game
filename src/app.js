@@ -1,5 +1,5 @@
 import Loading from './screens/home';
-import Battle from 'screens/battle';
+import Battle from './screens/battle';
 import Hero from './components/hero';
 import Enemy from './components/enemy';
 import Score from './components/score';
@@ -12,6 +12,8 @@ import { citiesTask } from './components/tasks/cities';
 import { animalsTask } from './components/tasks/animals';
 import { APPEARANCE } from './assets/data/heroAppearance.js';
 import { ENEMY_NAMES } from './assets/data/enemyNames.js';
+import style from './bundle.css';
+
 
 const hero = new Hero();
 const enemy = new Enemy(ENEMY_NAMES);

@@ -14,45 +14,45 @@
 }
 
 .berlin {
-  background-image: url('img/berlin.jpg');
+  background-image: url('../../../assets/img/tasks/cities/berlin.jpg');
 }
 
 .london {
-  background-image: url('img/london.jpg');
+  background-image: url('../../../assets/img/tasks/cities/london.jpg');
 }
 
 .minsk {
-  background-image: url('img/minsk.jpg');
+  background-image: url('../../../assets/img/tasks/cities/minsk.jpg');
 }
 
 .moscow {
-  background-image: url('img/moscow.jpg');
+  background-image: url('../../../assets/img/tasks/cities/moscow.jpg');
 }
 
 .new-york {
-  background-image: url('img/new-york.jpg');
+  background-image: url('../../../assets/img/tasks/cities/new-york.jpg');
 }
 
 .paris {
-  background-image: url('img/paris.jpg');
+  background-image: url('../../../assets/img/tasks/cities/paris.jpg');
 }
 
 .praha {
-  background-image: url('img/praha.jpg');
+  background-image: url('../../../assets/img/tasks/cities/praha.jpg');
 }
 
 .rome {
-  background-image: url('img/rome.jpg');
+  background-image: url('../../../assets/img/tasks/cities/rome.jpg');
 }
 
-.sankt-petersburg {
-  background-image: url('img/sankt-petersburg.jpg');
+.saint-petersburg {
+  background-image: url('../../../assets/img/tasks/cities/saint-petersburg.jpg');
 }
 
 .warsaw {
-  background-image: url('img/warsaw.jpg');
+  background-image: url('../../../assets/img/tasks/cities/warsaw.jpg');
 }
 
 .wien {
-  background-image: url('img/wien.jpg');
+  background-image: url('../../../assets/img/tasks/cities/wien.jpg');
 }

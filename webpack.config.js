@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -11,6 +11,7 @@ module.exports = {
   },
 
   watch: true,
+  mode: 'development',
   devtool: 'source-map',
 
   module: {
@@ -34,24 +35,41 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              minimize: false
+              minimize: false,
+              attrs: ['img:src', 'link:href', 'audio:src']
             }
           }
         ]
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      }
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader"
+        ]
+      },
+      {
+        test: /\.(png|jpg|wav|mp3|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            }
+          }
+        ]
+      },    
     ]
   },
 
   plugins: [
-    new HtmlWebpackPlugin(),
-    new ExtractTextPlugin('bundle.css'),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: 'index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'main.css'
+    }),
     new UglifyJSPlugin({
       sourceMap: true
     })

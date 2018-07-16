@@ -1,0 +1,1250 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+body {
+  font-family: "Escritura Hebrew", Georgia, serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.config-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.config-item-image {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 2px solid #00004d;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.config-item-image:hover {
+  background-color: #ff8533;
+}
+
+.hero-figure {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 532px;
+  height: 532px;
+}
+.head {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 0;
+  left: 0;
+  width: 265px;
+  height: 270px;
+}
+
+.head-0 {
+  background-image: url(src/assets/img/hero/head/0.png);
+}
+
+.head-1 {
+  background-image: url(src/assets/img/hero/head/1.png);
+}
+
+.head-2 {
+  background-image: url(src/assets/img/hero/head/2.png);
+}
+
+.body {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 0;
+  left: 0;
+  width: 165px;
+  height: 200px;
+}
+
+.body-0 {
+  background-image: url(src/assets/img/hero/body/0.png);
+}
+
+.body-1 {
+  background-image: url(src/assets/img/hero/body/1.png);
+}
+
+.body-2 {
+  background-image: url(src/assets/img/hero/body/2.png);
+}
+
+.person {
+  width: 532px;
+  height: 532px;
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+
+.bg-gun.head-0.body-0 {
+  background-image: url(src/assets/img/hero/struggle/gun/0-0.png);
+}
+
+.bg-gun.head-0.body-1 {
+  background-image: url(src/assets/img/hero/struggle/gun/0-1.png);
+}
+
+.bg-gun.head-0.body-2 {
+  background-image: url(src/assets/img/hero/struggle/gun/0-2.png);
+}
+
+.bg-gun.head-1.body-0 {
+  background-image: url(src/assets/img/hero/struggle/gun/1-0.png);
+}
+
+.bg-gun.head-1.body-1 {
+  background-image: url(src/assets/img/hero/struggle/gun/1-1.png);
+}
+
+.bg-gun.head-1.body-2 {
+  background-image: url(src/assets/img/hero/struggle/gun/1-2.png);
+}
+
+.bg-gun.head-2.body-0 {
+  background-image: url(src/assets/img/hero/struggle/gun/2-0.png);
+}
+
+.bg-gun.head-2.body-1 {
+  background-image: url(src/assets/img/hero/struggle/gun/2-1.png);
+}
+
+.bg-gun.head-2.body-2 {
+  background-image: url(src/assets/img/hero/struggle/gun/2-2.png);
+}
+
+/****************************************************************/
+
+.bg-sword.head-0.body-0 {
+  background-image: url(src/assets/img/hero/struggle/sword/0-0.png);
+}
+
+.bg-sword.head-0.body-1 {
+  background-image: url(src/assets/img/hero/struggle/sword/0-1.png);
+}
+
+.bg-sword.head-0.body-2 {
+  background-image: url(src/assets/img/hero/struggle/sword/0-2.png);
+}
+
+.bg-sword.head-1.body-0 {
+  background-image: url(src/assets/img/hero/struggle/sword/1-0.png);
+}
+
+.bg-sword.head-1.body-1 {
+  background-image: url(src/assets/img/hero/struggle/sword/1-1.png);
+}
+
+.bg-sword.head-1.body-2 {
+  background-image: url(src/assets/img/hero/struggle/sword/1-2.png);
+}
+
+.bg-sword.head-2.body-0 {
+  background-image: url(src/assets/img/hero/struggle/sword/2-0.png);
+}
+
+.bg-sword.head-2.body-1 {
+  background-image: url(src/assets/img/hero/struggle/gun/2-1.png);
+}
+
+.bg-sword.head-2.body-2 {
+  background-image: url(src/assets/img/hero/struggle/sword/2-2.png);
+}
+
+/****************************************************************/
+
+.bg-die.head-0.body-0 {
+  background-image: url(src/assets/img/hero/struggle/die/0-0.png);
+}
+
+.bg-die.head-0.body-1 {
+  background-image: url(src/assets/img/hero/struggle/die/0-1.png);
+}
+
+.bg-die.head-0.body-2 {
+  background-image: url(src/assets/img/hero/struggle/die/0-2.png);
+}
+
+.bg-die.head-1.body-0 {
+  background-image: url(src/assets/img/hero/struggle/die/1-0.png);
+}
+
+.bg-die.head-1.body-1 {
+  background-image: url(src/assets/img/hero/struggle/die/1-1.png);
+}
+
+.bg-die.head-1.body-2 {
+  background-image: url(src/assets/img/hero/struggle/die/1-2.png);
+}
+
+.bg-die.head-2.body-0 {
+  background-image: url(src/assets/img/hero/struggle/die/2-0.png);
+}
+
+.bg-die.head-2.body-1 {
+  background-image: url(src/assets/img/hero/struggle/die/2-1.png);
+}
+
+.bg-die.head-2.body-2 {
+  background-image: url(src/assets/img/hero/struggle/die/2-2.png);
+}
+
+
+@keyframes person-move-1 {
+  0%
+  {
+      background-position: -10px -10px;    
+  }
+  20%
+  {
+      background-position: -542px -10px;
+  }
+  40%
+  {
+      background-position: -1074px -10px;
+  }
+  60%
+  {
+      background-position: -1606px -10px;
+  }
+  80%
+  {
+      background-position: -2138px -10px;
+  }
+  100%
+  {
+      background-position: -2670px -10px;
+  }
+}
+
+@keyframes person-move-2 {
+  0%
+  {
+      background-position: -10px -10px;    
+  }
+  10%
+  {
+      background-position: -542px -10px;
+  }
+  20%
+  {
+      background-position: -1074px -10px;
+  }
+  40%
+  {
+      background-position: -1606px -10px;
+  }
+  50%
+  {
+      background-position: -2138px -10px;
+  }
+  60%
+  {
+      background-position: -2670px -10px;
+  }
+  70%
+  {
+      background-position: -3202px -10px;
+  }
+  80%
+  {
+      background-position: -3734px -10px;
+  }
+  90%
+  {
+      background-position: -4266px -10px;
+  }
+  100%
+  {
+      background-position: -4798px -10px;
+  }
+}
+
+.person-attack-gun {
+  animation: person-move-1 2s steps(1, start);
+}
+
+.person-attack-sword {
+  animation: person-move-2 2s steps(1, start);
+}
+
+.person-die {
+  animation: person-move-2 2s steps(1, start);
+}
+section.home-screen {
+  background-color: #06f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  padding: 0 7%;
+}
+
+.home-screen header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.game-title h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #ff8533;
+}
+
+.hero-logo img {
+  width: 236px;
+  height: 300px;
+}
+
+.enemy-logo img {
+  width: 207px;
+  height: 300px;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+.header-logo img {
+  width: 226px;
+  height: 75px;
+}
+
+.description h2, 
+.score-section h2 {
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.description p {
+  line-height: 1.2;
+}
+
+.menu-wrapper {
+  margin-top: 30px;
+}
+
+section.navigation {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.navigation button {
+  padding-bottom: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #ff6;
+  color: #06f;
+}
+
+.navigation button:hover {
+  color: #00004d;
+}
+
+.score-section {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.score-container {
+  width: 60%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.score-container ol li {
+  padding: 10px;
+  border-bottom: 2px solid #00004d;
+}
+
+.score-container ol li:last-child {
+  border-bottom: none;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.attack-container {
+  display: flex;
+  justify-content: space-around;
+  min-width: 600px;
+  margin-top: 50px;
+}
+
+.attack-item {
+  border: 2px solid #033;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.attack-item:hover {
+  transform: scale(1.1);
+  border: 2px solid #ff8533;
+}
+
+.attack-gun {
+  background: url(src/assets/img/screens/attack-selection/gun-attack.png) 50% 100% no-repeat;
+}
+
+.attack-sword {
+  background: url(src/assets/img/screens/attack-selection/sword-attack.png) 50% 100% no-repeat;
+}
+section.hero-creation-screen {
+  background-color: #06f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  padding: 0 7%;
+}
+
+.hero-creation-screen h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.hero-creation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+section.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#player-name-input {
+  margin: 15px 0;
+  padding: 10px;
+  border: 2px solid #00004d;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.hero-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-options h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-figure-container {
+  width: 300px;
+  height: 300px;
+  margin: 25px auto;
+}
+
+.submit {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.submit-button {
+  padding: 7px 20px 10px;
+  color: #06f;
+  background-color: #ff6;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  color: #00004d;
+}
+section.battle-screen {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  background: #06f url(src/assets/img/screens/battle/bg.png) 50% 100% no-repeat;
+  background-size: 100% 100%;
+  font-size: 1.5rem;
+}
+
+section.battle-screen div, 
+section.battle-screen span,
+section.battle-screen h1, 
+section.battle-screen h2, 
+section.battle-screen p, 
+section.battle-screen img, 
+section.battle-screen section {
+  margin: 0;
+  padding: 0;
+}
+
+.battle-field-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+.player-name {
+  width: 40%;
+}
+
+.enemy-name {
+  width: 40%;
+  text-align: right;
+}
+
+.health-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.hero-health-bar {
+  height: 30px;
+  border: 2px solid #fff;
+}
+
+.enemy-health-bar {
+  height: 30px;
+  border: 2px solid #fff;
+  transform: scaleX(-1);
+}
+
+.attack-button-container {
+  position: relative;
+  width: 100vw;
+  height: 150px;
+}
+
+.attack-button {
+  height: 120px;
+  width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #699;
+  border-radius: 50%;
+  color: #033;
+  position: absolute;
+  top: 50%;
+  left: 50vw;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.attack-button:hover {
+  transform: scale(1.1);
+  background-color: #ff8533;
+  cursor: pointer;
+}
+
+.win-game-buttons-block button {
+  margin: 0 20px;
+  color: #033;
+  text-align: center;
+}
+
+.win-game-buttons-block button:hover {
+  background-color: #ff8533;
+  cursor: pointer;
+}
+
+.lose-game-window button {
+  color: #033;
+  text-align: center;
+}
+
+.lose-game-window button:hover {
+  background-color: #ff8533;
+  cursor: pointer;
+}
+
+.hero-container {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  width: 532px;
+  height: 532px;
+}
+
+.enemy-container {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 532px;
+  height: 532px;
+  transform: scaleX(-1);
+}
+@font-face {
+  font-family: 'Escritura Hebrew';
+  src: url(src/assets/fonts/Escritura-Hebrew.otf) format('opentype');
+}
+.task-type-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 600px;
+  margin-top: 30px;
+}
+
+.task-type-item {
+  border: 2px solid #033;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 15px;
+}
+
+.task-type-item:hover {
+  transform: scale(1.1);
+  border: 2px solid #ff8533;
+}
+.task-screen {
+  position: absolute;
+  background-color: #06f;
+  color: #fff;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.task-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.task-screen p {
+  margin: 20px auto;
+  font-size: 2rem;
+}
+
+.task-screen input {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #00004d;
+  padding: 5px;
+  text-align: center;
+}
+
+.check-answer-button {
+  width: 150px;
+  height: 50px;
+  background-color: #ff6;
+  color: #06f;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.check-answer-button:hover {
+  color: #00004d;
+  cursor: pointer;
+}
+
+.correct-answer {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  color: #062;
+  width: 50%;
+  height: 25%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.wrong-answer {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  color: #f00;
+  width: 50%;
+  height: 25%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.math-expression {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.math-expression span {
+	padding: 5px;
+}
+.word-for-translation {
+  color: #00004d;
+  margin: 10px 0;
+}
+.listening-button img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.listening-button img:hover {
+  transform: scale(1.1)
+}
+
+.city-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.city-wrapper > div {
+  width: 400px;
+  height: 300px;
+  background-position: center;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.berlin {
+  background-image: url(src/assets/img/tasks/cities/berlin.jpg);
+}
+
+.london {
+  background-image: url(src/assets/img/tasks/cities/london.jpg);
+}
+
+.minsk {
+  background-image: url(src/assets/img/tasks/cities/minsk.jpg);
+}
+
+.moscow {
+  background-image: url(src/assets/img/tasks/cities/moscow.jpg);
+}
+
+.new-york {
+  background-image: url(src/assets/img/tasks/cities/new-york.jpg);
+}
+
+.paris {
+  background-image: url(src/assets/img/tasks/cities/paris.jpg);
+}
+
+.praha {
+  background-image: url(src/assets/img/tasks/cities/praha.jpg);
+}
+
+.rome {
+  background-image: url(src/assets/img/tasks/cities/rome.jpg);
+}
+
+.saint-petersburg {
+  background-image: url(src/assets/img/tasks/cities/saint-petersburg.jpg);
+}
+
+.warsaw {
+  background-image: url(src/assets/img/tasks/cities/warsaw.jpg);
+}
+
+.wien {
+  background-image: url(src/assets/img/tasks/cities/wien.jpg);
+}
+.animal-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.animal-wrapper > div {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.badger {
+  background-image: url(src/assets/img/tasks/animals/badger.png);
+}
+
+.bear {
+  background-image: url(src/assets/img/tasks/animals/bear.png);
+}
+
+.beaver {
+  background-image: url(src/assets/img/tasks/animals/beaver.png);
+}
+
+.fox {
+  background-image: url(src/assets/img/tasks/animals/fox.png);
+}
+
+.hedgehog {
+  background-image: url(src/assets/img/tasks/animals/hedgehog.png);
+}
+
+.moose {
+  background-image: url(src/assets/img/tasks/animals/moose.png);
+}
+
+.mouse {
+  background-image: url(src/assets/img/tasks/animals/mouse.png);
+}
+
+.rabbit {
+  background-image: url(src/assets/img/tasks/animals/rabbit.png);
+}
+
+.squirrel {
+  background-image: url(src/assets/img/tasks/animals/squirrel.png);
+}
+
+.wolf {
+  background-image: url(src/assets/img/tasks/animals/wolf.png);
+}
+.modal-wrapper {
+  font-family: "Escritura Hebrew", Georgia, serif;
+  position: absolute;
+  background-color: #099;
+  color: #033;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-window h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.modal-window {
+  padding: 50px;
+  background-color: #fff;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-window p {
+  margin: 30px auto;
+}
+
+/*# sourceMappingURL=main.css.map*/

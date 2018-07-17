@@ -36,17 +36,27 @@ class Game {
 
   handleEvents(e) {
     if (e.target.id === 'attack-button' && !this.activeAttack) {
-        this.attackSelectionScreen.classList.remove('hidden');
-    } else if (e.target.id === 'next-game-button') {
-        this.startNextLevel();
-    } else if (e.target.id === 'exit-to-menu-button') {
-        this.exitToMenu();
-    } else if (e.target.classList.contains('attack-item')) {
-        this.selectAttackType(e)
-    } else if (e.target.classList.contains('task-item')) {
-        this.selectTaskType(e)
-    } else if (e.target.id === 'check-answer-button') {
-        this.checkAnswer();
+      this.attackSelectionScreen.classList.remove('hidden');
+    }
+
+    if (e.target.id === 'continue-game-button') {
+      this.startNextLevel();
+    }
+
+    if (e.target.classList.contains('exit-menu-button')) {
+      this.exitToMenu();
+    }
+
+    if (e.target.classList.contains('attack-item')) {
+      this.selectAttackType(e);
+    }
+
+    if (e.target.classList.contains('task-item')) {
+      this.selectTaskType(e);
+    }
+
+    if (e.target.id === 'check-answer-button') {
+      this.checkAnswer();
     }
   }
 
@@ -59,7 +69,7 @@ class Game {
 
   exitToMenu() {
     let resultWindow = `${this.gameStatus}GameWindow`;
-    this.battle.gameResultPage.classList.add('hidden');
+    this.battle.gameResultWindow.classList.add('hidden');
     this.battle[resultWindow].classList.add('hidden');
     this.battle.battleScreen.classList.add('hidden');
     this.homeScreen.classList.remove('hidden');
@@ -94,7 +104,7 @@ class Game {
         this.enemy.healthBar.render(this.enemy.health);
         this.activeAttack = false;
         this.setWinStatus();
-      }, 5000);
+      }, 3000);
     } else {
       this.enemy.attack(this.attackType);
       this.hero.takeAttack(this.attackType);
@@ -105,7 +115,7 @@ class Game {
         this.hero.healthBar.render(this.hero.health);
         this.activeAttack = false;
         this.setLoseStatus();
-      }, 5000);
+      }, 3000);
     }
   }
 

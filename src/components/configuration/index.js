@@ -52,7 +52,6 @@ class Configuration {
 
   changeConfiguration(e) {
     let configType = e.target.dataset.itemType;
-
     if (e.target.id === 'submit-button') {
       if (this.nameInput.value) {
         this.hero.name = this.nameInput.value;

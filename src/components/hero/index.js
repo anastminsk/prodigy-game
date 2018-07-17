@@ -25,7 +25,6 @@ class Hero {
     if (!this.healthBar) {
       this.healthBar = new Bar(className);
     }
-
     this.renderHealthBar();
   }
 

@@ -72,8 +72,8 @@ export const VOCABULARY = [
     translation: ['письмо', 'буква', 'символ', 'послание']
   },
   {
-      word: 'market',
-      translation: ['рынок', 'базар', 'магазин']
+    word: 'market',
+    translation: ['рынок', 'базар', 'магазин']
   },
   {
     word: 'number',

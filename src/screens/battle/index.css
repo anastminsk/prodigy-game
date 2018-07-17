@@ -23,7 +23,7 @@ section.battle-screen img {
   text-transform: uppercase;
 }
 
-.player-name {
+.hero-name {
   width: 40%;
   margin-top: 20px;
   margin-left: 20px;
@@ -85,8 +85,14 @@ section.battle-screen img {
   cursor: pointer;
 }
 
+#win-game-window h2,
+#lose-game-window h2 {
+  margin-bottom: 20px;
+} 
+
 .win-game-buttons-block button {
-  margin: 0 20px;
+  width: 50px;
+  margin: 20px;
   color: #033;
   text-align: center;
 }
@@ -96,12 +102,24 @@ section.battle-screen img {
   cursor: pointer;
 }
 
-.lose-game-window button {
+#lose-game-window button {
+  margin: 20px;
   color: #033;
   text-align: center;
 }
 
-.lose-game-window button:hover {
+#lose-game-window button:hover {
+  background-color: #ff8533;
+  cursor: pointer;
+}
+
+.exit-menu-button {
+  margin: 20px 20px;
+  color: #033;
+  text-align: center;
+}
+
+.exit-menu-button:hover {
   background-color: #ff8533;
   cursor: pointer;
 }

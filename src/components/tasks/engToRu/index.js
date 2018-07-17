@@ -20,7 +20,7 @@ class EngToRuTask extends Task {
 
   checkResult() {
     let answer = this.answer.value.toLowerCase();
-    if (this.translations.indexOf(answer !== -1)) {
+    if (this.translations.indexOf(answer) !== -1) {
       return true;
     } 
     return false;

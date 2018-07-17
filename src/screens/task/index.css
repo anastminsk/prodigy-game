@@ -1,8 +1,8 @@
 .task-screen {
   position: absolute;
+  top: 0;
   background-color: #06f;
   color: #fff;
-  top: 0;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -49,7 +49,11 @@
 
 .correct-answer {
   position: absolute;
-  top: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 3rem;
   color: #062;
@@ -64,7 +68,11 @@
 
 .wrong-answer {
   position: absolute;
-  top: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 3rem;
   color: #f00;

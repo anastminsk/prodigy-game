@@ -87,22 +87,20 @@
     </section>
     <section class="attack-selection-screen modal-wrapper hidden" id="attack-selection-screen">
       <div class="modal-window" id="attack-selection">
-        <h2>Select Attack Type</h2>
+        <h2>Select attack type</h2>
         <div class="attack-container">
           <div class="attack-item attack-gun" id="attack-gun">Gun Attack</div>
           <div class="attack-item attack-sword" id="attack-sword">Sword Attack</div>
         </div>
       </div>
-    </section>
-    <section class="task-selection-screen modal-wrapper hidden" id="task-selection-screen">
-      <div class="modal-window" id="task-selection">
-        <h2>Select Task Type</h2>
-        <div class="task-type-container">
-          <div class="task-type-item" id="simpleMathTask">Mathematics</div>
-          <div class="task-type-item" id="engToRuTask">Translation</div>
-          <div class="task-type-item" id="listeningTask">Listening</div>
-          <div class="task-type-item" id="citiesTask">Cities</div>
-          <div class="task-type-item" id="animalsTask">Animals</div>
+      <div class="modal-window hidden" id="task-selection">
+        <h2>Select task type</h2>
+        <div class="task-container">
+          <div class="task-item" id="simpleMathTask">Mathematics</div>
+          <div class="task-item" id="engToRuTask">Translation</div>
+          <div class="task-item" id="listeningTask">Listening</div>
+          <div class="task-item" id="citiesTask">Cities</div>
+          <div class="task-item" id="animalsTask">Animals</div>
         </div>
       </div>
     </section>
@@ -124,7 +122,7 @@
       </div>
       <div class="task-wrapper hidden" id="listening-task">
         <p>Click the button below and enter what you heard</p>
-        <div class="listening-button"><img src="assets/img/screens/task/listen-button.png" alt="Listen" width="80" height="80"></div>
+        <div class="listening-button"><img src="assets/img/screens/task/listen-button.png" alt="Listen" width="80" height="80" id="listening-button"></div>
         <input type="text" name="listening-answer" id="listening-answer">
       </div>
       <div class="task-wrapper hidden" id="cities-task">

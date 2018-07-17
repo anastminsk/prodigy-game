@@ -32,8 +32,17 @@ class CitiesTask extends Task {
     if (this.city.name.indexOf(answer) !== -1) {
       return true;
     }
-
     return false;
+  }
+
+  correctAnswer() {
+    super.correctAnswer();
+    this.taskWrapper.classList.add('hidden');
+  }
+
+  wrongAnswer() {
+    super.wrongAnswer();
+    this.taskWrapper.classList.add('hidden');
   }
 }
 

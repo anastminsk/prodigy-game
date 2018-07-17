@@ -55,8 +55,17 @@ class SimpleMathTask extends Task {
     if (Number(this.result.value) === this.answer) {
       return true;
     }
-
     return false;
+  }
+
+  correctAnswer() {
+    super.correctAnswer();
+    this.taskWrapper.classList.add('hidden');
+  }
+
+  wrongAnswer() {
+    super.wrongAnswer();
+    this.taskWrapper.classList.add('hidden');
   }
 }
 

@@ -1,7 +1,7 @@
 .attack-container {
   display: flex;
-  justify-content: space-around;
-  min-width: 600px;
+  justify-content: space-between;
+  min-width: 500px;
   margin-top: 50px;
 }
 
@@ -17,7 +17,7 @@
 
 .attack-item:hover {
   transform: scale(1.1);
-  border: 2px solid #ff8533;
+  border: 2px solid #06f;
 }
 
 .attack-gun {
@@ -26,4 +26,30 @@
 
 .attack-sword {
   background: url('../../assets/img/screens/attack-selection/sword-attack.png') 50% 70% no-repeat;
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.task-item {
+  border: 2px solid #033;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 15px;
+}
+
+.task-item:hover {
+  transform: scale(1.1);
+  border: 2px solid #06f;
 }

@@ -68,8 +68,9 @@ section.battle-screen img {
   width: 120px;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid #699;
+  border: 2px solid #fff;
   border-radius: 50%;
+  background-color: lightblue;
   color: #033;
   position: absolute;
   top: 50%;

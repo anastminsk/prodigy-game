@@ -4,13 +4,12 @@ class Game {
     this.enemy = enemy;
     this.tasksList = tasks;
     this.task = null;
+    this.activeAttack = false;
     this.homeScreen = document.getElementById('home-screen');
     this.attackSelectionScreen = document.getElementById('attack-selection-screen');
     this.attackSelectionWindow = document.getElementById('attack-selection');
-    this.taskSelectionScreen = document.getElementById('task-selection-screen');
     this.taskSelectionWindow = document.getElementById('task-selection');
     this.attackButton = document.getElementById('attack-button');
-    this.taskScreen = document.getElementById('task-screen');
     document.addEventListener('click', (e) => this.handleEvents(e));
   }
 
@@ -36,7 +35,7 @@ class Game {
   }
 
   handleEvents(e) {
-    if (e.target.id === 'attack-button') {
+    if (e.target.id === 'attack-button' && !this.activeAttack) {
         this.attackSelectionScreen.classList.remove('hidden');
     } else if (e.target.id === 'next-game-button') {
         this.startNextLevel();
@@ -44,7 +43,7 @@ class Game {
         this.exitToMenu();
     } else if (e.target.classList.contains('attack-item')) {
         this.selectAttackType(e)
-    } else if (e.target.classList.contains('task-type-item')) {
+    } else if (e.target.classList.contains('task-item')) {
         this.selectTaskType(e)
     } else if (e.target.id === 'check-answer-button') {
         this.checkAnswer();
@@ -53,7 +52,7 @@ class Game {
 
   startNextLevel() {
     this.level++;
-    this.initGame();
+    this.setPersons();
     this.battle.gameResultWindow.classList.add('hidden');
     this.battle.winGameWindow.classList.add('hidden');
   }
@@ -64,7 +63,7 @@ class Game {
     this.battle[resultWindow].classList.add('hidden');
     this.battle.battleScreen.classList.add('hidden');
     this.homeScreen.classList.remove('hidden');
-    this.player.health = 100;
+    this.hero.health = 100;
   }
 
   selectAttackType(e) {
@@ -83,6 +82,7 @@ class Game {
 
   checkAnswer() {
     let result = this.task.checkResult();
+    this.activeAttack = true;
     if (result) {
       this.solvedTasks++;
       this.hero.attack(this.attackType);
@@ -92,16 +92,18 @@ class Game {
       }, 500);
       setTimeout(() => {
         this.enemy.healthBar.render(this.enemy.health);
+        this.activeAttack = false;
         this.setWinStatus();
       }, 5000);
     } else {
       this.enemy.attack(this.attackType);
-      this.player.takeAttack(this.attackType);
+      this.hero.takeAttack(this.attackType);
       setTimeout(() => {
         this.task.wrongAnswer();
       }, 500);
       setTimeout(() => {
-        this.player.healthBar.render(this.player.health);
+        this.hero.healthBar.render(this.hero.health);
+        this.activeAttack = false;
         this.setLoseStatus();
       }, 5000);
     }
@@ -115,7 +117,7 @@ class Game {
   }
 
   setLoseStatus() {
-    if (!this.player.health) {
+    if (!this.hero.health) {
       this.gameStatus = 'lose';
       this.battle.showFinalGameWindow(this.gameStatus, this.level, this.solvedTasks);
     }

@@ -39,7 +39,7 @@ class Task {
     this.wrongAnswerArea.classList.remove('hidden');
     this.wrongAnswerSound.play();
     setTimeout(() => {
-        this.wrongAnswerField.classList.add('hidden');
+        this.wrongAnswerArea.classList.add('hidden');
     }, 1000);
   }
 }

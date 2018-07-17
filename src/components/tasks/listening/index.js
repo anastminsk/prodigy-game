@@ -5,7 +5,7 @@ class ListeningTask extends Task {
     super();
     this.synth = window.speechSynthesis;
     this.taskWrapper = document.getElementById('listening-task');
-    this.playButton = document.querySelector('img');
+    this.playButton = document.getElementById('listening-button');
     this.answer = document.getElementById('listening-answer');
     this.playButton.addEventListener('click', () => this.speakWord());
   }
@@ -28,8 +28,17 @@ class ListeningTask extends Task {
     if (answer === this.word) {
       return true;
     }
-
     return false;
+  }
+
+  correctAnswer() {
+    super.correctAnswer();
+    this.taskWrapper.classList.add('hidden');
+  }
+
+  wrongAnswer() {
+    super.wrongAnswer();
+    this.taskWrapper.classList.add('hidden');
   }
 }
 

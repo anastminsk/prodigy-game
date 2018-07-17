@@ -1,46 +1,46 @@
 export const CITIES = [
   {
-    city: ['berlin', 'берлин'],
+    name: ['berlin', 'берлин'],
     className: 'berlin'
   },
   {
-    city: ['london', 'лондон'],
+    name: ['london', 'лондон'],
     className: 'london'
   },
   {
-    city: ['minsk', 'минск'],
+    name: ['minsk', 'минск'],
     className: 'minsk'
   },
   {
-    city: ['moscow', 'москва'],
+    name: ['moscow', 'москва'],
     className: 'moscow'
   },
   {
-    city: ['new york', 'нью-йорк'],
+    name: ['new york', 'нью-йорк'],
     className: 'new-york'
   },
   {
-    city: ['paris', 'париж'],
+    name: ['paris', 'париж'],
     className: 'paris'
   },
   {
-    city: ['praha', 'прага'],
+    name: ['praha', 'прага'],
     className: 'praha'
   },
   {
-    city: ['rome', 'рим'],
+    name: ['rome', 'рим'],
     className: 'rome'
   },
   {
-    city: ['saint petersburg', 'санкт-петербург'],
+    name: ['saint petersburg', 'санкт-петербург'],
     className: 'saint-petersburg'
   },
   {
-    city: ['warsaw', 'варшава'],
+    name: ['warsaw', 'варшава'],
     className: 'warsaw'
   },
   {
-    city: ['wien', 'вена'],
+    name: ['wien', 'вена'],
     className: 'wien'
   }
 ]

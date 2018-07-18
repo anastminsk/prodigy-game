@@ -1,9 +1,9 @@
-/*.head {
+.person {
+  width: 512px;
+  height: 512px;
   background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 265px;
-  height: 270px;
-}*/
+  background-position: -10px -10px;
+}
 
 .head-0 {
   background-image: url("../../assets/img/hero/head/0.png");
@@ -17,13 +17,7 @@
   background-image: url("../../assets/img/hero/head/2.png");
 }
 
-/*.body {
-  background-repeat: no-repeat;
-  width: 165px;
-  height: 200px;
-  margin-top: -20px;
-  margin-left: 50px;
-}*/
+/****************************************************************/
 
 .body-0 {
   background-image: url("../../assets/img/hero/body/0.png");
@@ -37,14 +31,7 @@
   background-image: url("../../assets/img/hero/body/2.png");
 }
 
-.person {
-  
-  width: 300px;
-  height: 450px;
-  background-repeat: no-repeat;
-  background-position: -100px -60px;
-  margin-left: 30px;
-}
+/****************************************************************/
 
 .person.head-0.body-0 {
   background-image: url("../../assets/img/hero/struggle/gun/0-0.png");
@@ -151,7 +138,7 @@
 }
 
 .bg-sword.head-2.body-1 {
-  background-image: url("../../assets/img/hero/struggle/gun/2-1.png");
+  background-image: url("../../assets/img/hero/struggle/sword/2-1.png");
 }
 
 .bg-sword.head-2.body-2 {
@@ -195,7 +182,6 @@
 .bg-die.head-2.body-2 {
   background-image: url("../../assets/img/hero/struggle/die/2-2.png");
 }
-
 
 @keyframes person-move-1 {
   0%

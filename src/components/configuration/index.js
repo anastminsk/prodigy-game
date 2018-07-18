@@ -8,6 +8,7 @@ class Configuration {
     this.heroBodyContainer = document.getElementById('hero-body-container');
     this.heroFigureContainer = document.getElementById('hero-figure-container');
     this.nameInput = document.getElementById('player-name-input');
+    this.warning = document.getElementById('submission-warning');
     document.addEventListener('click', (e) => this.changeConfiguration(e));
   }
 
@@ -46,7 +47,6 @@ class Configuration {
   renderHeroFigure() {
     this.heroFigureContainer.innerHTML = '';
     let figure = this.hero.createPerson();
-    /*figure.classList.add('hero-figure');*/
     this.heroFigureContainer.appendChild(figure);
   }
 
@@ -59,6 +59,8 @@ class Configuration {
         this.game.init(this.hero);
         this.game.setPersons();
         this.nameInput.value = "";
+      } else {
+        this.warning.classList.remove('hidden');
       } 
     }
 

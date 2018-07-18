@@ -11,13 +11,9 @@ class Hero {
 
   createPerson() {
     let person = document.createElement('div');
-    /*this.head = document.createElement('div');
-    this.body = document.createElement('div');
-    this.head.classList.add('head', `head-${this.headNum}`);
-    this.body.classList.add('body', `body-${this.bodyNum}`);*/
-    person.classList.add('person', `head-${this.headNum}`, `body-${this.bodyNum}`);
-    /*person.appendChild(this.head);
-    person.appendChild(this.body);*/
+    this.figureContainer = document.createElement('div');
+    this.figureContainer.classList.add('person', `head-${this.headNum}`, `body-${this.bodyNum}`);
+    person.appendChild(this.figureContainer);
     return person;
   }
 
@@ -34,26 +30,32 @@ class Hero {
 
   attack(attackType) {
     if (attackType === 'attack-gun') {
-      let person = this.createPerson();
+      setTimeout(() => {
+        this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
+      }, 1000);
       setTimeout(() => {
         this.shotSound.play();
-        person.classList.add('bg-gun', 'person-attack-gun');
+        this.figureContainer.classList.add('bg-gun', 'person-attack-gun');
       }, 2000);
     } else if (attackType === 'attack-sword') {
-      let person = this.createPerson();
+      setTimeout(() => {
+        this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
+      }, 1000);
       setTimeout(() => {
         this.swordSound.play();
-        person.classList.add('bg-sword', 'person-attack-sword');
+        this.figureContainer.classList.add('bg-sword', 'person-attack-sword');
       }, 2000);
     }
   }
 
   takeAttack(attackType) {
     this.health = this.health - 25;
-    let person = this.createPerson();
     setTimeout(() => {
-      person.classList.add('bg-die', 'person-die');  
+      this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
     }, 2000);
+    setTimeout(() => {
+      this.figureContainer.classList.add('bg-die', 'person-die');
+    }, 3000);
   }
 }
 

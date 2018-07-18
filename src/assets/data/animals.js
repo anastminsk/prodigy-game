@@ -8,7 +8,7 @@ export const ANIMALS = [
     className: 'bear'
   },
   {
-    name: ['beaver', 'бобр'],
+    name: ['beaver', 'бобр', 'бобер'],
     className: 'beaver'
   },
   {
@@ -16,7 +16,7 @@ export const ANIMALS = [
     className: 'fox'
   },
   {
-    name: ['hedgehog', 'еж'],
+    name: ['hedgehog', 'еж', 'ежик'],
     className: 'hedgehog'
   },
   {

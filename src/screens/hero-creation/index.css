@@ -59,14 +59,18 @@ section.hero-options {
 }
 
 .hero-figure-container {
-  width: 300px;
-  height: 450px;
-  margin: 50px 25px 10px 25px;
+  width: 512px;
+  height: 512px;
 }
 
 .submit {
   margin-top: 30px;
   text-align: center;
+}
+
+.submission-warning {
+  color: #ff8533;
+  margin-bottom: 15px;
 }
 
 .submit-button {

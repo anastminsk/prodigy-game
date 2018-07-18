@@ -30,7 +30,7 @@
         <section class="score-section hidden" id="score-section">
           <h2>Score results</h2>
           <button class="close-button" id="close-button">X</button>
-          <div class="score-container"></div>
+          <div class="score-container" id="score-container"></div>
         </section>
       </div>
     </section>
@@ -43,43 +43,44 @@
             <input type="text" id="player-name-input" name="player-name-input" placeholder="Your Name" required>
           </div>
           <section class="hero-options">
-            <div class="hero-head-container">
+            <div class="hero-head-container" id="hero-head-container">
               <h3>Select Head</h3>
             </div>
-            <div class="hero-body-container">
+            <div class="hero-body-container" id="hero-body-container">
                 <h3>Select Body</h3>
             </div>
           </section>
         </section>
-        <div class="hero-figure-container"></div>
+        <div class="hero-figure-container" id="hero-figure-container"></div>
       </div>
       <div class="submit">
-        <button class="submit-button">Start</button>
+        <div class="submission-warning hidden" id="submission-warning">Please enter Your Name!</div>
+        <button class="submit-button" id="submit-button">Start</button>
       </div>
     </section>
     <section class="battle-screen hidden" id="battle-screen">
       <div class="battle-field-header">
-        <div class="player-name" id="player-name"></div>
-        <div class="game-level"><h2>Level</h2><span id="game-level"></span></div>
+        <div class="hero-name" id="hero-name"></div>
+        <div class="game-level"><h2>Level <span id="game-level"></span></h2></div>
         <div class="enemy-name" id="enemy-name"></div>
       </div>
       <div class="health-bar" id="health-bar"></div>
       <div class="attack-button-container">
         <button class="attack-button" id="attack-button">Attack</button>
       </div>
-      <div class="game-result-window modal-dialog hidden" id="game-result-window">
-        <div class="win-game-window hidden" id="win-game-window">
+      <div class="game-result-window modal-wrapper hidden" id="game-result-window">
+        <div class="modal-window hidden" id="win-game-window">
           <h2>You win!</h2>
           <p>Continue to struggle with next enemy?</p>
           <div class="win-game-buttons-block">
-            <button class="button" id="next-game-button">Yes</button>
-            <button class="button" id="exit-to-menu-button">No</button>
+            <button class="button" id="continue-game-button">Yes</button>
+            <button class="button exit-menu-button">No</button>
           </div>
         </div>
-        <div class="lose-game-window hidden" id="lose-game-window">
+        <div class="modal-window hidden" id="lose-game-window">
           <h2>You lose!</h2>
           <p>You solved <span id="number-of-tasks"></span> tasks and killed <span id="number-of-enemies"></span> enemies</p>
-          <button class="exit-button">Exit to menu</button>
+          <button class="exit-menu-button">Exit to menu</button>
         </div>
       </div>
       <audio id="shot-sound" src="src/assets/sound/shot-bullet.mp3"></audio>
@@ -87,22 +88,20 @@
     </section>
     <section class="attack-selection-screen modal-wrapper hidden" id="attack-selection-screen">
       <div class="modal-window" id="attack-selection">
-        <h2>Select Attack Type</h2>
+        <h2>Select attack type</h2>
         <div class="attack-container">
           <div class="attack-item attack-gun" id="attack-gun">Gun Attack</div>
           <div class="attack-item attack-sword" id="attack-sword">Sword Attack</div>
         </div>
       </div>
-    </section>
-    <section class="task-selection-screen modal-wrapper hidden" id="task-selection-screen">
-      <div class="modal-window" id="task-selection">
-        <h2>Select Task Type</h2>
-        <div class="task-type-container">
-          <div class="task-type-item" id="simpleMathTask">Mathematics</div>
-          <div class="task-type-item" id="engToRuTask">Translation</div>
-          <div class="task-type-item" id="listeningTask">Listening</div>
-          <div class="task-type-item" id="citiesTask">Cities</div>
-          <div class="task-type-item" id="animalsTask">Animals</div>
+      <div class="modal-window hidden" id="task-selection">
+        <h2>Select task type</h2>
+        <div class="task-container">
+          <div class="task-item" id="simpleMathTask">Mathematics</div>
+          <div class="task-item" id="engToRuTask">Translation</div>
+          <div class="task-item" id="listeningTask">Listening</div>
+          <div class="task-item" id="citiesTask">Cities</div>
+          <div class="task-item" id="animalsTask">Animals</div>
         </div>
       </div>
     </section>
@@ -124,7 +123,7 @@
       </div>
       <div class="task-wrapper hidden" id="listening-task">
         <p>Click the button below and enter what you heard</p>
-        <div class="listening-button"><img src="src/assets/img/screens/task/listen-button.png" alt="Listen" width="80" height="80"></div>
+        <div class="listening-button"><img src="src/assets/img/screens/task/listen-button.png" alt="Listen" width="80" height="80" id="listening-button"></div>
         <input type="text" name="listening-answer" id="listening-answer">
       </div>
       <div class="task-wrapper hidden" id="cities-task">

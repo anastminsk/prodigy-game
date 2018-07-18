@@ -2,9 +2,9 @@ class Battle {
   constructor(score) {
     this.score = score;
     this.battleScreen = document.getElementById('battle-screen');
+    this.level = document.getElementById('game-level');
     this.heroName = document.getElementById('hero-name');
     this.enemyName = document.getElementById('enemy-name');
-    this.level = document.getElementById('game-level');
     this.gameResultWindow = document.getElementById('game-result-window'); 
     this.winGameWindow = document.getElementById('win-game-window');
     this.loseGameWindow = document.getElementById('lose-game-window'); 

@@ -28,8 +28,9 @@
   width: 200px;
   height: 40px;
   border: 2px solid #00004d;
-  padding: 5px;
+  padding: 5px 5px 10px;
   text-align: center;
+  line-height: 40px;
 }
 
 .check-answer-button {

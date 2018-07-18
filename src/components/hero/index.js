@@ -29,33 +29,51 @@ class Hero {
   }
 
   attack(attackType) {
+    let delay = (ms) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(resolve, ms);
+      });
+    }
+
     if (attackType === 'attack-gun') {
-      setTimeout(() => {
+      delay(1000)
+      .then(() => {
         this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
-      }, 1000);
-      setTimeout(() => {
+        return delay(2000);
+      })
+      .then(() => {
         this.shotSound.play();
         this.figureContainer.classList.add('bg-gun', 'person-attack-gun');
-      }, 2000);
+      });
     } else if (attackType === 'attack-sword') {
-      setTimeout(() => {
+      delay(1000)
+      .then(() => {
         this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
-      }, 1000);
-      setTimeout(() => {
+        return delay(2000);
+      })
+      .then(() => {
         this.swordSound.play();
         this.figureContainer.classList.add('bg-sword', 'person-attack-sword');
-      }, 2000);
-    }
+      });
+    }   
   }
 
   takeAttack(attackType) {
     this.health = this.health - 25;
-    setTimeout(() => {
+    let delay = (ms) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(resolve, ms);
+      });
+    }
+
+    delay(2000)
+    .then(() => {
       this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
-    }, 2000);
-    setTimeout(() => {
+      return delay(3000);
+    })
+    .then(() => {
       this.figureContainer.classList.add('bg-die', 'person-die');
-    }, 3000);
+    });
   }
 }
 

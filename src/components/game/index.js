@@ -93,30 +93,40 @@ class Game {
   checkAnswer() {
     let result = this.task.checkResult();
     this.activeAttack = true;
+    let delay = (ms) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(resolve, ms);
+      });
+    }
+
     if (result) {
       this.solvedTasks++;
       this.hero.attack(this.attackType);
       this.enemy.takeAttack(this.attackType);
-      setTimeout(() => {
+      delay(500)
+      .then(() => {
         this.task.correctAnswer();
-      }, 500);
-      setTimeout(() => {
+        return delay(7000);
+      })
+      .then(() => {
         this.enemy.healthBar.render(this.enemy.health);
         this.activeAttack = false;
         this.setWinStatus();
-      }, 3000);
+      });
     } else {
       this.enemy.attack(this.attackType);
       this.hero.takeAttack(this.attackType);
-      setTimeout(() => {
+      delay(500)
+      .then(() => {
         this.task.wrongAnswer();
-      }, 500);
-      setTimeout(() => {
+        return delay(7000);
+      })
+      .then(() => {
         this.hero.healthBar.render(this.hero.health);
         this.activeAttack = false;
         this.setLoseStatus();
-      }, 3000);
-    }
+      });
+    }  
   }
 
   setWinStatus() {

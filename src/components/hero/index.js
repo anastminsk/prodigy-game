@@ -28,28 +28,28 @@ class Hero {
     this.healthBar.render(this.health);
   }
 
-  attack(attackType) {
-    let delay = (ms) => {
-      return new Promise((resolve, reject) => {
-        setTimeout(resolve, ms);
-      });
-    }
+  delay(ms) {
+    return new Promise((resolve, reject) => {
+      setTimeout(resolve, ms);
+    });
+  }    
 
+  attack(attackType) {
     if (attackType === 'attack-gun') {
-      delay(1000)
+      this.delay(1000)
       .then(() => {
         this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
-        return delay(2000);
+        return this.delay(2000);
       })
       .then(() => {
         this.shotSound.play();
         this.figureContainer.classList.add('bg-gun', 'person-attack-gun');
       });
     } else if (attackType === 'attack-sword') {
-      delay(1000)
+      this.delay(1000)
       .then(() => {
         this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
-        return delay(2000);
+        return this.delay(2000);
       })
       .then(() => {
         this.swordSound.play();
@@ -60,16 +60,10 @@ class Hero {
 
   takeAttack(attackType) {
     this.health = this.health - 25;
-    let delay = (ms) => {
-      return new Promise((resolve, reject) => {
-        setTimeout(resolve, ms);
-      });
-    }
-
-    delay(2000)
+    this.delay(2000)
     .then(() => {
       this.figureContainer.classList.remove('bg-gun', 'person-attack-gun', 'bg-sword', 'person-attack-sword', 'bg-die', 'person-die');
-      return delay(3000);
+      return this.delay(3000);
     })
     .then(() => {
       this.figureContainer.classList.add('bg-die', 'person-die');
